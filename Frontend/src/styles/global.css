@@ -1,0 +1,91 @@
+:root {
+  --sat-primary: #4f46e5;
+  --sat-primary-dark: #3730a3;
+}
+
+body {
+  background-color: #f4f5fb;
+}
+
+.sat-navbar {
+  background: linear-gradient(90deg, var(--sat-primary), var(--sat-primary-dark));
+}
+
+.login-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--sat-primary), var(--sat-primary-dark));
+}
+
+.login-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 2.5rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.stat-card {
+  background: #fff;
+  border-left: 4px solid;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.stat-icon {
+  font-size: 1.5rem;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.stat-label {
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+.notification-dropdown {
+  position: absolute;
+  right: 0;
+  top: 130%;
+  width: 320px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  z-index: 1000;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.notification-header {
+  padding: 0.75rem 1rem;
+  font-weight: 600;
+  border-bottom: 1px solid #eee;
+  color: #111827;
+}
+
+.notification-item {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #f3f4f6;
+  cursor: pointer;
+  color: #111827;
+}
+
+.notification-item:hover {
+  background: #f9fafb;
+}
+
+.notification-item.unread {
+  background: #eef2ff;
+}
+
+.card-header {
+  border-bottom: 1px solid #eee;
+}
